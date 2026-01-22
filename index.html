@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - World-Class PDF Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>PDF Tools</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to PDF Tools</h2>
+            <p>Manage your PDFs with ease. Merge, split, compress, convert, edit, organize, protect, and more!</p>
+        </section>
+        <section id="tools" class="tools-grid">
+            <div class="tool-card" id="merge-pdf">
+                <h3>1. Merge PDF</h3>
+                <p>Combine multiple PDF files into one. Supports drag-and-drop.</p>
+                <div class="drop-zone" data-tool="merge">Drop PDF files here</div>
+                <button class="process-btn">Merge PDFs</button>
+            </div>
+            <div class="tool-card" id="split-pdf">
+                <h3>2. Split PDF</h3>
+                <p>Split a PDF into multiple files by pages or ranges.</p>
+                <input type="file" accept=".pdf">
+                <input type="text" placeholder="e.g., 1-5,7,10-15">
+                <button class="process-btn">Split PDF</button>
+            </div>
+            <div class="tool-card" id="compress-pdf">
+                <h3>3. Compress PDF</h3>
+                <p>Reduce file size without quality loss.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Compress PDF</button>
+            </div>
+            <div class="tool-card" id="convert-pdf">
+                <h3>4. Convert PDF</h3>
+                <p>To Word, PowerPoint, Excel, Image, or from Office to PDF.</p>
+                <select id="convert-type">
+                    <option>To Word</option>
+                    <option>To PowerPoint</option>
+                    <option>To Excel</option>
+                    <option>To Image</option>
+                    <option>From Word/PPT/Excel to PDF</option>
+                </select>
+                <input type="file">
+                <button class="process-btn">Convert</button>
+            </div>
+            <div class="tool-card" id="edit-pdf">
+                <h3>5. Edit PDF</h3>
+                <p>Add text, shapes, annotations, highlights, comments, images, or draw.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Edit PDF</button>
+            </div>
+            <div class="tool-card" id="organize-pdf">
+                <h3>6. Organize PDF</h3>
+                <p>Rotate, reorder, or delete pages.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Organize PDF</button>
+            </div>
+            <div class="tool-card" id="protect-pdf">
+                <h3>7. Protect PDF</h3>
+                <p>Add or remove passwords, encrypt.</p>
+                <input type="file" accept=".pdf">
+                <input type="password" placeholder="Password">
+                <button class="process-btn">Protect PDF</button>
+            </div>
+            <div class="tool-card" id="unlock-pdf">
+                <h3>8. Unlock PDF</h3>
+                <p>Remove password protection.</p>
+                <input type="file" accept=".pdf">
+                <input type="password" placeholder="Current Password">
+                <button class="process-btn">Unlock PDF</button>
+            </div>
+            <div class="tool-card" id="watermark-pdf">
+                <h3>9. Watermark PDF</h3>
+                <p>Add text or image watermark.</p>
+                <input type="file" accept=".pdf">
+                <input type="text" placeholder="Watermark Text">
+                <button class="process-btn">Add Watermark</button>
+            </div>
+            <div class="tool-card" id="pdf-to-pdfa">
+                <h3>10. PDF to PDF/A</h3>
+                <p>Convert to PDF/A for archiving.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Convert to PDF/A</button>
+            </div>
+            <div class="tool-card" id="pdf-ocr">
+                <h3>11. PDF OCR</h3>
+                <p>Make scanned PDFs searchable.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Run OCR</button>
+            </div>
+            <div class="tool-card" id="pdf-to-epub">
+                <h3>12. PDF to ePub</h3>
+                <p>Convert to eBook format.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Convert to ePub</button>
+            </div>
+            <div class="tool-card" id="sign-pdf">
+                <h3>13. Sign PDF</h3>
+                <p>Digitally sign with custom signature.</p>
+                <input type="file" accept=".pdf">
+                <input type="file" accept="image/*" placeholder="Upload Signature">
+                <button class="process-btn">Sign PDF</button>
+            </div>
+            <div class="tool-card premium" id="batch-processing">
+                <h3>14. Batch Processing <span>Premium</span></h3>
+                <p>Process multiple PDFs at once.</p>
+                <input type="file" multiple accept=".pdf">
+                <button class="process-btn">Batch Process</button>
+            </div>
+            <div class="tool-card premium" id="cloud-integration">
+                <h3>15. Cloud Storage Integration <span>Premium</span></h3>
+                <p>Integrate with Google Drive/Dropbox.</p>
+                <button class="process-btn">Connect Cloud</button>
+            </div>
+            <div class="tool-card premium" id="custom-tools">
+                <h3>16. Custom PDF Tools <span>Premium</span></h3>
+                <p>Create personalized tools.</p>
+                <button class="process-btn">Customize</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PDF Tools. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - World-Class PDF Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>PDF Tools</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to PDF Tools</h2>
+            <p>Manage your PDFs with ease. Merge, split, compress, convert, edit, organize, protect, and more!</p>
+        </section>
+        <section id="tools" class="tools-grid">
+            <div class="tool-card" id="merge-pdf">
+                <h3>1. Merge PDF</h3>
+                <p>Combine multiple PDF files into one. Supports drag-and-drop.</p>
+                <div class="drop-zone" data-tool="merge">Drop PDF files here</div>
+                <button class="process-btn">Merge PDFs</button>
+            </div>
+            <div class="tool-card" id="split-pdf">
+                <h3>2. Split PDF</h3>
+                <p>Split a PDF into multiple files by pages or ranges.</p>
+                <input type="file" accept=".pdf">
+                <input type="text" placeholder="e.g., 1-5,7,10-15">
+                <button class="process-btn">Split PDF</button>
+            </div>
+            <div class="tool-card" id="compress-pdf">
+                <h3>3. Compress PDF</h3>
+                <p>Reduce file size without quality loss.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Compress PDF</button>
+            </div>
+            <div class="tool-card" id="convert-pdf">
+                <h3>4. Convert PDF</h3>
+                <p>To Word, PowerPoint, Excel, Image, or from Office to PDF.</p>
+                <select id="convert-type">
+                    <option>To Word</option>
+                    <option>To PowerPoint</option>
+                    <option>To Excel</option>
+                    <option>To Image</option>
+                    <option>From Word/PPT/Excel to PDF</option>
+                </select>
+                <input type="file">
+                <button class="process-btn">Convert</button>
+            </div>
+            <div class="tool-card" id="edit-pdf">
+                <h3>5. Edit PDF</h3>
+                <p>Add text, shapes, annotations, highlights, comments, images, or draw.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Edit PDF</button>
+            </div>
+            <div class="tool-card" id="organize-pdf">
+                <h3>6. Organize PDF</h3>
+                <p>Rotate, reorder, or delete pages.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Organize PDF</button>
+            </div>
+            <div class="tool-card" id="protect-pdf">
+                <h3>7. Protect PDF</h3>
+                <p>Add or remove passwords, encrypt.</p>
+                <input type="file" accept=".pdf">
+                <input type="password" placeholder="Password">
+                <button class="process-btn">Protect PDF</button>
+            </div>
+            <div class="tool-card" id="unlock-pdf">
+                <h3>8. Unlock PDF</h3>
+                <p>Remove password protection.</p>
+                <input type="file" accept=".pdf">
+                <input type="password" placeholder="Current Password">
+                <button class="process-btn">Unlock PDF</button>
+            </div>
+            <div class="tool-card" id="watermark-pdf">
+                <h3>9. Watermark PDF</h3>
+                <p>Add text or image watermark.</p>
+                <input type="file" accept=".pdf">
+                <input type="text" placeholder="Watermark Text">
+                <button class="process-btn">Add Watermark</button>
+            </div>
+            <div class="tool-card" id="pdf-to-pdfa">
+                <h3>10. PDF to PDF/A</h3>
+                <p>Convert to PDF/A for archiving.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Convert to PDF/A</button>
+            </div>
+            <div class="tool-card" id="pdf-ocr">
+                <h3>11. PDF OCR</h3>
+                <p>Make scanned PDFs searchable.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Run OCR</button>
+            </div>
+            <div class="tool-card" id="pdf-to-epub">
+                <h3>12. PDF to ePub</h3>
+                <p>Convert to eBook format.</p>
+                <input type="file" accept=".pdf">
+                <button class="process-btn">Convert to ePub</button>
+            </div>
+            <div class="tool-card" id="sign-pdf">
+                <h3>13. Sign PDF</h3>
+                <p>Digitally sign with custom signature.</p>
+                <input type="file" accept=".pdf">
+                <input type="file" accept="image/*" placeholder="Upload Signature">
+                <button class="process-btn">Sign PDF</button>
+            </div>
+            <div class="tool-card premium" id="batch-processing">
+                <h3>14. Batch Processing <span>Premium</span></h3>
+                <p>Process multiple PDFs at once.</p>
+                <input type="file" multiple accept=".pdf">
+                <button class="process-btn">Batch Process</button>
+            </div>
+            <div class="tool-card premium" id="cloud-integration">
+                <h3>15. Cloud Storage Integration <span>Premium</span></h3>
+                <p>Integrate with Google Drive/Dropbox.</p>
+                <button class="process-btn">Connect Cloud</button>
+            </div>
+            <div class="tool-card premium" id="custom-tools">
+                <h3>16. Custom PDF Tools <span>Premium</span></h3>
+                <p>Create personalized tools.</p>
+                <button class="process-btn">Customize</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PDF Tools. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif; /* Safe font */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Purple gradient background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header styling */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 1rem; /* Space inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navigation bar */
+nav {
+    display: flex; /* Side-by-side layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center vertically */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal list */
+    gap: 1rem; /* Space between links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines */
+    color: #333; /* Dark links */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hero section */
+.hero {
+    text-align: center; /* Center text */
+    padding: 4rem 2rem; /* Lots of space */
+    color: white; /* White text on gradient */
+}
+
+/* Tools grid layout */
+.tools-grid {
+    display: grid; /* Grid for cards */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between cards */
+    padding: 2rem; /* Space around grid */
+}
+
+/* Individual tool cards */
+.tool-card {
+    background: white; /* White background */
+    padding: 1.5rem; /* Space inside */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center; /* Center content */
+}
+
+.tool-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bigger shadow */
+}
+
+/* Drag-and-drop zone */
+.drop-zone {
+    border: 2px dashed #ccc; /* Dashed border */
+    padding: 2rem; /* Space inside */
+    margin: 1rem 0; /* Space above/below */
+    border-radius: 5px; /* Rounded */
+    background: #f9f9f9; /* Light gray background */
+}
+
+/* Process buttons */
+.process-btn {
+    background: #667eea; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 0.5rem 1rem; /* Space inside */
+    border-radius: 5px; /* Rounded */
+    cursor: pointer; /* Hand cursor */
+    font-size: 1rem; /* Normal size */
+}
+
+.process-btn:hover {
+    background: #5a6fd8; /* Darker blue on hover */
+}
+
+/* Premium badge */
+.premium span {
+    background: gold; /* Gold background */
+    color: black; /* Black text */
+    padding: 0.2rem 0.5rem; /* Small padding */
+    border-radius: 3px; /* Rounded */
+    font-size: 0.8rem; /* Small text */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Center text */
+    padding: 1rem; /* Space inside */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    color: #333; /* Dark text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
